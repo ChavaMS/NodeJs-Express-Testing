@@ -5,5 +5,6 @@ const API = EXPRESS.Router();
 
 API.post('/register', USER_CONTROLLER.registerUser);
 
+API.get('/test', USER_CONTROLLER.test);
 
 module.exports = API;

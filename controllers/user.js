@@ -13,6 +13,11 @@ async function registerUser(req, res) {
     }
 }
 
+function test(req, res) {
+    return res.status(200).send({ mensaje: 'Hello world' });
+}
+
 module.exports = {
-    registerUser
+    registerUser,
+    test
 }
